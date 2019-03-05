@@ -1,0 +1,9 @@
+<%= form_for @article do |a| %>
+  <p><%= a.label :title %></p>
+  <p><%= a.text_field :title %></p><br>
+
+  <p><%= a.label :content %></p>
+  <p><%= a.text_area :content, class: 'form-control form-control-lg' %></p>
+
+  <%= a.submit %>
+<% end %>
